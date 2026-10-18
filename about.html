@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>当サイトについて・免責事項 - 道具と暮らしの手帖</title>
+  <meta name="description" content="道具と暮らしの手帖の運営方針、免責事項、広告ポリシー、プライバシーポリシー、および掲載内容に関するお問い合わせ窓口のご案内です。">
+  <link rel="stylesheet" href="assets/style.css">
+  <meta name="robots" content="noindex, follow">
+</head>
+<body>
+  
+  <header>
+    <div class="container header-inner">
+      <div>
+        <a href="index.html" class="site-title">← 道具と暮らしの手帖</a>
+        <div class="site-subtitle">運営方針・免責事項・お問い合わせ</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1 class="article-title" style="margin-bottom: 28px;">当サイトについて・利用規約</h1>
+
+      <!-- 1. サイト概要 -->
+      <section class="legal-box">
+        <h2>1. サイトの趣旨と運営方針</h2>
+        <p>
+          「道具と暮らしの手帖」は、個人が実際に購入・利用したPC周辺機器、生活家電、宿泊施設、ふるさと納税返礼品等に関する試用体験や生活実感を記録・共有する個人ブログメディアです。
+        </p>
+        <p>
+          誇大広告やSNSの流行に惑わされず、「実際に使って何が良くて、どこに注意すべきか」を中立かつ誠実な視点で記録することを基本方針としています。
+        </p>
+      </section>
+
+      <!-- 2. 免責事項（法的保護） -->
+      <section class="legal-box" id="disclaimer">
+        <h2>2. 免責事項（法的責任の制限）</h2>
+        <ul>
+          <li><strong>情報の正確性・完全性について:</strong> 当サイトに掲載している情報は、執筆者の個人的な体験・感想および各製品の公式発表情報に基づき慎重に作成しておりますが、その正確性、完全性、最新性、有用性、安全性について、明示的にも黙示的にもいかなる保証を行うものではありません。</li>
+          <li><strong>製品仕様・価格の変動:</strong> 製品の仕様、価格、在庫状況、販売条件、キャンペーン等は各メーカーおよび販売元により予告なく変更される場合があります。ご購入やご利用の際は、必ずリンク先の販売元・公式サイトにて最新情報をご確認ください。</li>
+          <li><strong>損害賠償の免責:</strong> 当サイトの掲載情報やリンク先サービスを利用したことにより生じたいかなる損害、損失、トラブル（直接的・間接的・派生的損害を含む）に対しても、当サイトおよび運営者は一切の責任を負いかねます。自己責任においてご利用いただきますようお願い申し上げます。</li>
+        </ul>
+      </section>
+
+      <!-- 3. 訂正・削除窓口（訴訟回避） -->
+      <section class="legal-box" id="contact">
+        <h2>3. 掲載内容に関する修正・削除・権利保護窓口</h2>
+        <p>
+          当サイトは、各メーカー様、著作権者様、および関係者様の知的財産権、名誉、信用、営業権を最大限尊重しており、誹謗中傷、事実無根の悪評、または営業妨害を行う意図は一切ございません。
+        </p>
+        <p>
+          万が一、当サイトの掲載内容に事実誤認、不適切な記述、肖像権・著作権等の権利侵害がございましたら、法的手続き等に進まれる前に、まずは下記窓口までご連絡いただけますようお願い申し上げます。
+        </p>
+        <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 16px;">
+          ※ご連絡をいただいた際は事実確認の上、原則24時間以内に内容の訂正、表現の見直し、または該当ページの非公開・削除対応を速やかに実施いたします。
+        </p>
+
+        <!-- お問い合わせWebフォーム -->
+        <div id="contact-form-container" style="background: var(--box-bg); padding: 20px; border-radius: 8px; border: 1px solid var(--border);">
+          <form id="contactForm" onsubmit="handleContactSubmit(event)">
+            <div style="display:none;"><input type="text" name="honeypot" id="honeypot"></div>
+
+            <div style="margin-bottom: 14px;">
+              <label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 6px;">お名前・ご担当者名（任意）</label>
+              <input type="text" id="contactName" placeholder="例: 〇〇株式会社 広報部 / ニックネーム" style="width: 100%; padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px;">
+            </div>
+
+            <div style="margin-bottom: 14px;">
+              <label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 6px;">ご連絡先メールアドレス（必須）</label>
+              <input type="email" id="contactEmail" required placeholder="name@example.com" style="width: 100%; padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px;">
+            </div>
+
+            <div style="margin-bottom: 14px;">
+              <label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 6px;">お問い合わせ種別</label>
+              <select id="contactCategory" style="width: 100%; padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; background: white;">
+                <option value="掲載内容の訂正・削除のご依頼">掲載内容の訂正・削除のご依頼（権利者・メーカー様）</option>
+                <option value="事実誤認・スペックの誤りのご指摘">事実誤認・スペックの誤りのご指摘</option>
+                <option value="著作権・肖像権等に関するご連絡">著作権・肖像権等に関するご連絡</option>
+                <option value="その他・ご意見">その他・ご意見</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom: 16px;">
+              <label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 6px;">ご連絡内容（対象URL・該当箇所など）</label>
+              <textarea id="contactMessage" required rows="4" placeholder="対象記事のURL、該当箇所、ご要望の詳細をご記入ください。" style="width: 100%; padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; line-height: 1.6;"></textarea>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <button type="submit" id="submitBtn" style="background: var(--text-main); color: white; border: none; padding: 10px 20px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer;">
+                送信する
+              </button>
+              <span id="formStatus" style="font-size: 12px; color: var(--text-muted);"></span>
+            </div>
+          </form>
+
+          <script>
+            async function handleContactSubmit(e) {
+              e.preventDefault();
+              var btn = document.getElementById('submitBtn');
+              var status = document.getElementById('formStatus');
+              btn.disabled = true;
+              btn.innerText = '送信中...';
+              status.innerText = '';
+
+              var payload = {
+                name: document.getElementById('contactName').value,
+                email: document.getElementById('contactEmail').value,
+                category: document.getElementById('contactCategory').value,
+                message: document.getElementById('contactMessage').value,
+                honeypot: document.getElementById('honeypot').value
+              };
+
+              try {
+                var res = await fetch('/api/contact', {
+                  method: 'POST',
+                  headers: {'Content-Type': 'application/json'},
+                  body: JSON.stringify(payload)
+                });
+                var result = await res.json();
+                if (result.status === 'ok') {
+                  document.getElementById('contact-form-container').innerHTML = '<div style="padding: 16px; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; color: #166534; font-size: 13px; line-height: 1.6;"><strong>送信が完了しました。</strong><br>ご連絡ありがとうございます。内容を確認の上、24時間以内に迅速に対応いたします。</div>';
+                } else {
+                  btn.disabled = false;
+                  btn.innerText = '送信する';
+                  status.innerText = 'エラー: ' + (result.message || '送信に失敗しました');
+                }
+              } catch(err) {
+                btn.disabled = false;
+                btn.innerText = '送信する';
+                status.innerText = '通信エラーが発生しました。';
+              }
+            }
+          </script>
+        </div>
+
+        <div style="margin-top: 14px; font-size: 11px; color: var(--text-dim);">
+          フォームが正常に動作しない場合は、媒体公式窓口 <code>contact@kurashi-note.net</code> までメールにてご連絡ください。
+        </div>
+      </section>
+
+      <!-- 4. 広告ポリシー（ステマ規制準拠） -->
+      <section class="legal-box">
+        <h2>4. 広告掲載ポリシー（景品表示法対応）</h2>
+        <p>
+          当サイトは、各アフィリエイトプログラム（楽天アフィリエイト、Amazonアソシエイト等）の参加者です。記事内で紹介する製品へのリンクを通じて購入・予約が行われた場合、運営者に所定の手数料が支払われることがあります。
+        </p>
+        <p>
+          景品表示法（ステルスマーケティング規制）に基づき、広告リンクを含む記事にはその旨を明確に明記しております。なお、広告掲載による紹介料の有無が、製品に対する個人の評価や使用感の記述を歪めることは一切ございません。
+        </p>
+      </section>
+
+      <!-- 5. プライバシーポリシー -->
+      <section class="legal-box" id="privacy">
+        <h2>5. プライバシーポリシー</h2>
+        <p>
+          当サイトでは、利用状況の把握およびサイト品質向上のため、Cookie（クッキー）等を利用したアクセス解析技術を用いる場合があります。収集されるデータは匿名であり、個人を特定する情報は含まれません。ブラウザの設定によりCookieの受け入れを拒否することも可能です。
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>道具と暮らしの手帖 &bull; 個人による試用・生活記録</p>
+      <div class="footer-links">
+        <a href="index.html">トップページへ戻る</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
